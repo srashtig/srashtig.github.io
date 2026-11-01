@@ -272,3 +272,21 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
 .sketch-col { display: flex; flex-direction: column; gap: 10px; }
 .sketch-link { font-size: 14.5px; font-weight: 550; }
 @media (max-width: 760px) { .sketch-col { max-width: 300px; } }
+
+/* Portfolio header: compact title */
+.page-head h1.small-title { font-size: 22px; font-weight: 650; color: var(--accent); letter-spacing: .01em; margin-bottom: 8px; }
+.page-head + .section { padding-top: 40px; }
+
+/* Professional pass: compact header, skills as a single table-like panel */
+.page-head > :last-child, .page-head > div > :last-child { margin-bottom: 0; }
+.skills { display: block; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.skills > div { display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: center; border: 0; border-radius: 0; border-bottom: 1px solid var(--line); padding: 14px 20px; }
+.skills > div:last-child { border-bottom: 0; }
+.skills > div:nth-child(odd) { background: var(--bg-alt); }
+.skills > div:hover { transform: none; box-shadow: none; }
+.skills h3 { margin: 0; font-size: 15px; }
+.skills .chips { margin-top: 0; gap: 6px; }
+.skills .chip { font-size: 13.5px; padding: 3px 11px; background: var(--bg); border: 1px solid var(--line); color: var(--text); font-weight: 500; }
+@media (max-width: 720px) {
+  .skills > div { grid-template-columns: 1fr; gap: 8px; padding: 14px 16px; }
+}
