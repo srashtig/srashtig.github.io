@@ -135,3 +135,78 @@ ul.plain li { margin-bottom: 6px; }
   h1 { font-size: 34px; }
   .lead { font-size: 17px; }
 }
+
+/* About */
+.about { display: grid; grid-template-columns: 3fr 2fr; gap: 32px; }
+.about p { margin: 0 0 12px; }
+.about ul { padding-left: 20px; margin: 8px 0; }
+.about li { margin-bottom: 6px; }
+
+/* Project case studies */
+.case { display: grid; grid-template-columns: 2fr 3fr; gap: 28px; background: var(--bg-alt); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; margin-bottom: 22px; align-items: start; }
+.case-img img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; }
+.case h3 { font-size: 20px; margin: 4px 0 10px; }
+.case .metric { margin: 0 8px 0 0; }
+.case dl { margin: 0; }
+.case dt { font-weight: 650; color: var(--accent); font-size: 14px; text-transform: uppercase; letter-spacing: .04em; margin-top: 10px; }
+.case dd { margin: 2px 0 0; }
+.case .card-links { padding-top: 14px; }
+@media (max-width: 860px) {
+  .about, .case { grid-template-columns: 1fr; }
+}
+
+/* Cosmic hero band */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.hero-band {
+  background:
+    url("images/stars.svg") center / cover no-repeat,
+    radial-gradient(ellipse 55% 70% at 78% 45%, rgba(255,140,60,.35), transparent 60%),
+    radial-gradient(ellipse 60% 80% at 70% 50%, rgba(120,70,220,.45), transparent 70%),
+    linear-gradient(160deg, #070b1a 0%, #0d1530 55%, #1b1240 100%);
+  color: #f2f4fa;
+  margin-bottom: 28px;
+}
+.hero-band .hero { grid-template-columns: 1fr 220px; padding-top: 72px; padding-bottom: 64px; }
+.hero-band .avatar { width: 220px; height: 220px; border: 3px solid rgba(255,255,255,.85); box-shadow: 0 0 0 10px rgba(255,170,90,.18), 0 0 60px 18px rgba(150,110,255,.45); }
+.hello { font-family: Georgia, "Times New Roman", serif; font-size: 52px; line-height: 1.1; margin: 0; color: #c9cfe3; }
+.hello span { color: #fff; }
+.hello-2 { font-family: Georgia, "Times New Roman", serif; font-size: 40px; line-height: 1.15; margin: 6px 0 22px; color: #fff; }
+.hero-band .eyebrow { color: #ffc58f; }
+.hero-band .lead { color: #d3d8e6; margin-top: 8px; }
+.hero-band .meta { color: #aab2c8; }
+.hero-band .btn { background: transparent; color: #f2f4fa; border-color: rgba(255,255,255,.35); }
+.hero-band .btn:hover { border-color: #fff; color: #fff; }
+.hero-band .btn.primary { background: #fff; color: #0d1530; border-color: #fff; }
+.hero-band .btn.primary:hover { color: #0d1530; opacity: .9; }
+.nav { background: color-mix(in srgb, var(--bg) 92%, transparent); }
+@media (max-width: 720px) {
+  .hero-band .hero { grid-template-columns: 1fr; padding-top: 40px; padding-bottom: 44px; }
+  .hero-band .avatar { order: -1; width: 130px; height: 130px; }
+  .hello { font-size: 38px; }
+  .hello-2 { font-size: 30px; }
+}
+
+/* Quote */
+.quote { margin: 18px 0 0; padding: 4px 0 4px 16px; border-left: 3px solid #ffb070; font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 17px; color: var(--text); }
+.quote cite { display: block; margin-top: 6px; font-style: normal; font-family: inherit; font-size: 14px; color: var(--muted); }
+.quote cite::before { content: "— "; }
+
+/* Talks & videos */
+.feature-video { display: grid; grid-template-columns: 3fr 2fr; gap: 28px; align-items: center; margin-bottom: 24px; }
+.embed { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: #000; }
+.embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.feature-video h3 { margin: 4px 0 8px; }
+.videos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.video { display: flex; flex-direction: column; color: var(--text); }
+.video:hover { text-decoration: none; }
+.video:hover .vt { color: var(--accent); }
+.thumb { position: relative; display: block; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 10px; background: var(--bg-alt); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.dur { position: absolute; right: 8px; bottom: 8px; background: rgba(0,0,0,.75); color: #fff; font-size: 12px; padding: 1px 6px; border-radius: 4px; }
+.vt { font-weight: 600; margin-top: 8px; line-height: 1.35; }
+.vh { font-size: 14px; color: var(--muted); }
+@media (max-width: 860px) {
+  .feature-video { grid-template-columns: 1fr; }
+  .videos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) { .videos { grid-template-columns: 1fr; } }

@@ -19,11 +19,13 @@
     <a class="brand" href="#top">Srashti Goyal</a>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
     <nav class="links">
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#research">Research</a>
       <a href="#skills">Skills</a>
       <a href="#publications">Publications</a>
+      <a href="#talks">Talks</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -32,19 +34,23 @@
 <main id="top">
 
   <!-- ── Hero ── -->
-  <section class="hero wrap">
-    <img class="avatar" src="images/headshot.jpg" alt="Portrait of Srashti Goyal" width="180" height="180">
-    <div>
-      <p class="eyebrow">AI Engineer · Data Scientist · ML Researcher</p>
-      <h1>Dr. Srashti Goyal</h1>
-      <p class="lead">Astrophysics &amp; ML Researcher with a PhD in physics and 8 years of experience building deep learning, generative AI and Bayesian inference systems for large-scale time-series data. Now building LLM, RAG and agentic AI applications.</p>
-      <div class="cta">
-        <a class="btn primary" href="mailto:srashti.official@gmail.com">Email me</a>
-        <a class="btn" href="https://www.linkedin.com/in/srashtig" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/srashtig" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://scholar.google.com/citations?hl=en&amp;user=jjwbt0UAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+  <section class="hero-band">
+    <div class="hero wrap">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm <span>Srashti.</span></p>
+        <p class="hello-2">An astrophysicist<br>who builds AI.</p>
+        <p class="eyebrow">Astrophysics &amp; ML Researcher · AI Engineer · Data Scientist</p>
+        <h1 class="sr-only">Dr. Srashti Goyal</h1>
+        <p class="lead">PhD in physics with 8 years of experience building deep learning, generative AI and Bayesian inference systems for large-scale time-series data. Now also building LLM, RAG and agentic AI applications.</p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:srashti.official@gmail.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/srashtig" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/srashtig" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://scholar.google.com/citations?hl=en&amp;user=jjwbt0UAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+        <p class="meta">Pune / Indore, India</p>
       </div>
-      <p class="meta">Pune / Indore, India</p>
+      <img class="avatar" src="images/headshot.jpg" alt="Portrait of Srashti Goyal" width="220" height="220">
     </div>
   </section>
 
@@ -53,6 +59,29 @@
     <div><strong>100x</strong><span>faster signal modeling (GLoW)</span></div>
     <div><strong>10x</strong><span>less inference compute with generative models</span></div>
     <div><strong>14+</strong><span>peer-reviewed publications</span></div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" class="wrap section">
+    <h2>About me</h2>
+    <div class="about">
+      <div>
+        <p>I'm an astrophysicist who builds machine learning systems, because the data problems I work on rarely have an off-the-shelf answer. For 8 years I've built models that find rare signals in noisy, large-scale data: spotting gravitational waves bent by galaxies, speeding up inference with generative models, and forecasting COVID-19 trajectories.</p>
+        <p>Today I bring the same rigor to applied AI: LLM agents, retrieval-augmented generation (RAG) and tools people can actually use, like <a href="#projects">LandIntel</a>.</p>
+        <p class="muted">Outside work I'm a certified yoga instructor and have trained in permaculture design.</p>
+        <blockquote class="quote">"We keep moving forward, opening new doors, and doing new things, because we're curious and curiosity keeps leading us down new paths."<cite>Walt Disney</cite></blockquote>
+      </div>
+      <div>
+        <h3>What I bring</h3>
+        <ul>
+          <li>Turning messy, multi-source data into reliable pipelines and decisions</li>
+          <li>Deep learning and generative models, from research to GPU deployment</li>
+          <li>Statistical rigor: Bayesian inference, hypothesis testing, uncertainty</li>
+          <li>Clear communication: 14+ papers, 15+ international talks, mentoring</li>
+        </ul>
+        <p class="tags">Domains: healthcare · geospatial &amp; land · epidemiology · astrophysics</p>
+      </div>
+    </div>
   </section>
 
   <!-- ── Experience ── -->
@@ -100,38 +129,43 @@
   <!-- ── Projects ── -->
   <section id="projects" class="wrap section">
     <h2>AI Projects</h2>
-    <div class="cards">
-      <article class="card">
-        <p class="card-meta">Oct 2026 · Capstone, Codebasics AI Engineering</p>
-        <h3>LandIntel</h3>
-        <p class="sub">AI land intelligence tool for Madhya Pradesh</p>
-        <ul>
-          <li>Fuses <b>8</b> geospatial data sources (satellite imagery, groundwater, rainfall, terrain, hydrology, roads/rail, nearby places, census) in a fault-tolerant pipeline.</li>
-          <li>LLM reasoning agent with tool routing evaluates site suitability for a stated purpose and powers grounded Q&amp;A, PDF/HTML reports and ranked site comparisons.</li>
-          <li>Guardrails stop the model from inventing figures; ships with <b>8</b> pre-analyzed regions.</li>
-        </ul>
+
+    <article class="case">
+      <a class="case-img" href="https://landintel.streamlit.app/" target="_blank" rel="noopener"><img src="images/landintel.jpg" alt="LandIntel project poster: problem, data sources, workflow and architecture" loading="lazy" width="1200" height="800"></a>
+      <div class="case-body">
+        <p class="card-meta"><span class="metric">GenAI · Geospatial</span> Oct 2026 · Capstone, Codebasics AI Engineering</p>
+        <h3>LandIntel: AI land intelligence for Madhya Pradesh</h3>
+        <dl>
+          <dt>Problem</dt><dd>Choosing land means piecing together satellite, terrain, water, infrastructure and census data scattered across many sources. It's slow, and easy to get wrong.</dd>
+          <dt>Approach</dt><dd>A geospatial pipeline pulls <b>8</b> data sources for any site into one structured summary and map. An LLM agent with tool routing reasons over that summary for the buyer's purpose (farming, housing, a resort), with guardrails that stop it from inventing numbers.</dd>
+          <dt>Results</dt><dd>Site analysis, grounded Q&amp;A, PDF/HTML reports and ranked site comparisons in one app, live on Streamlit Cloud with <b>8</b> pre-analyzed regions. A failing data source degrades gracefully instead of breaking the run.</dd>
+          <dt>Next steps</dt><dd>Cover regions beyond Madhya Pradesh, add more data sources, and save sites and chat history between sessions.</dd>
+        </dl>
         <p class="tags">Python · LLM Agents · Google Earth Engine · Streamlit · Groq</p>
         <div class="card-links">
           <a class="btn primary small" href="https://landintel.streamlit.app/" target="_blank" rel="noopener">Live app</a>
           <a class="btn small" href="https://github.com/srashtig/LandIntel" target="_blank" rel="noopener">GitHub</a>
         </div>
-      </article>
+      </div>
+    </article>
 
-      <article class="card">
-        <p class="card-meta">Sep 2026</p>
-        <h3>MediBot</h3>
-        <p class="sub">Role-aware hospital assistant with advanced RAG</p>
-        <ul>
-          <li>Enforces role-based access control at retrieval time through Qdrant metadata filters.</li>
-          <li>Hybrid retrieval (dense embeddings + BM25) with cross-encoder reranking, plus a router that sends analytical questions to SQL RAG.</li>
-          <li>FastAPI backend with token login and a Next.js frontend that cites sources for every answer.</li>
-        </ul>
-        <p class="tags">Python · LangChain · Qdrant · FastAPI · Next.js</p>
+    <article class="case">
+      <a class="case-img" href="https://github.com/srashtig/MediBot_AdvancedRAG" target="_blank" rel="noopener"><img src="images/medibot.jpg" alt="MediBot answering a doctor's question with cited source documents" loading="lazy" width="1200" height="650"></a>
+      <div class="case-body">
+        <p class="card-meta"><span class="metric">GenAI · Healthcare</span> Sep 2026</p>
+        <h3>MediBot: role-aware hospital assistant</h3>
+        <dl>
+          <dt>Problem</dt><dd>Hospital staff need quick answers from clinical, billing and maintenance documents, but each role should see only what it is allowed to.</dd>
+          <dt>Approach</dt><dd>Access rules are enforced at retrieval time with Qdrant metadata filters. Hybrid search (dense embeddings + BM25) with cross-encoder reranking finds the right passages, and a router sends counting and analytics questions to SQL over claims and ticket tables.</dd>
+          <dt>Results</dt><dd>Every answer cites its source documents, users only ever retrieve the collections their role permits, and analytical questions are answered from live tables. FastAPI backend with token login and a Next.js frontend.</dd>
+          <dt>Next steps</dt><dd>Measure retrieval quality and answer accuracy on an evaluation set, and deploy a public demo.</dd>
+        </dl>
+        <p class="tags">Python · LangChain · Qdrant · FastAPI · Next.js · SQL</p>
         <div class="card-links">
           <a class="btn small" href="https://github.com/srashtig/MediBot_AdvancedRAG" target="_blank" rel="noopener">GitHub</a>
         </div>
-      </article>
-    </div>
+      </div>
+    </article>
   </section>
 
   <!-- ── Research ── -->
@@ -141,25 +175,25 @@
       <article class="card">
         <span class="metric">1000x</span>
         <h3>LensID</h3>
-        <p>Deep learning (CNN + XGBoost) on spectrograms and sky maps to find strongly lensed gravitational-wave pairs, replacing pairwise Bayesian analysis that would not scale.</p>
+        <p>Finds pairs of gravitational-wave signals that are copies of one event, bent by a galaxy's gravity. A CNN reads signal images and sky maps, replacing a slow statistical comparison of every pair.</p>
         <div class="card-links"><a href="notes/lensing-ml.html">Read more</a> · <a href="https://github.com/srashtig/lensid-15jul-2022" target="_blank" rel="noopener">Code</a> · <a href="https://arxiv.org/abs/2106.12466" target="_blank" rel="noopener">Paper</a></div>
       </article>
       <article class="card">
         <span class="metric">10x</span>
         <h3>Generative inference</h3>
-        <p>Normalizing-flow models (Dingo) that estimate parameters of microlensed gravitational waves at a fraction of the compute of classical samplers.</p>
+        <p>Generative models (normalizing flows) learn to estimate a black hole merger's properties directly, instead of running a slow sampler for every event.</p>
         <div class="card-links"><a href="https://github.com/srashtig/dingo/tree/lensing" target="_blank" rel="noopener">Code</a> · <a href="https://arxiv.org/abs/2511.08486" target="_blank" rel="noopener">Paper</a></div>
       </article>
       <article class="card">
         <span class="metric">100x</span>
         <h3>GLoW</h3>
-        <p>Open-source package for wave-optics effects in gravitational lensing, built on fast numerical integration and optimized Fourier transforms.</p>
+        <p>Open-source package that models how lensing distorts gravitational waves, built on fast numerical integration.</p>
         <div class="card-links"><a href="https://github.com/miguelzuma/GLoW_public" target="_blank" rel="noopener">Code</a> · <a href="https://arxiv.org/abs/2409.04606" target="_blank" rel="noopener">Paper</a></div>
       </article>
       <article class="card">
         <span class="metric">~80%</span>
         <h3>Bayesian detection statistic</h3>
-        <p>A fast, efficient Bayesian method to search for strongly lensed gravitational waves with markedly better detection accuracy.</p>
+        <p>A new statistical test that decides faster and more accurately whether two signals are lensed copies of the same event.</p>
         <div class="card-links"><a href="https://github.com/anbarsode/PO2.0" target="_blank" rel="noopener">Code</a> · <a href="https://arxiv.org/abs/2412.01278" target="_blank" rel="noopener">Paper</a></div>
       </article>
       <article class="card">
@@ -171,7 +205,7 @@
       <article class="card">
         <span class="metric">GW231123</span>
         <h3>A magnified black hole merger</h3>
-        <p>First-author analysis of GW231123 as a magnified and diffracted black hole merger.</p>
+        <p>First-author study of GW231123, one of the most massive black hole mergers observed, as a signal magnified and distorted by gravitational lensing.</p>
         <div class="card-links"><a href="https://github.com/miguelzuma/GW231123_lensing_PLS" target="_blank" rel="noopener">Code</a> · <a href="https://arxiv.org/abs/2512.17631" target="_blank" rel="noopener">Paper</a></div>
       </article>
     </div>
@@ -181,11 +215,11 @@
   <section id="skills" class="wrap section">
     <h2>Skills</h2>
     <div class="skills">
-      <div><h3>Generative AI &amp; NLP</h3><p>LLMs, NLP, RAG (hybrid, SQL), AI Agents, LangChain, LangGraph, Normalizing Flows</p></div>
+      <div><h3>Generative AI &amp; NLP</h3><p>LLMs, NLP, RAG (hybrid, SQL), AI Agents, LangChain, Normalizing Flows</p></div>
       <div><h3>Machine Learning</h3><p>PyTorch, TensorFlow, Scikit-learn, CNNs, Deep Learning, Feature Engineering</p></div>
       <div><h3>Statistics</h3><p>Bayesian Inference, MCMC, Hypothesis Testing, Time-series Forecasting</p></div>
-      <div><h3>Programming</h3><p>Python, SQL, C, MATLAB</p></div>
-      <div><h3>Deployment &amp; Tools</h3><p>FastAPI, Streamlit, Docker, Qdrant, AWS Lambda, GitLab CI/CD, CUDA, Google Earth Engine</p></div>
+      <div><h3>Programming</h3><p>Python, SQL</p></div>
+      <div><h3>Deployment &amp; Tools</h3><p>FastAPI, Streamlit, Qdrant, CUDA, Google Earth Engine, Next.js</p></div>
     </div>
   </section>
 
@@ -231,9 +265,55 @@
     </ol>
   </section>
 
+  <!-- ── Talks & Videos ── -->
+  <section id="talks" class="wrap section">
+    <h2>Talks &amp; Videos</h2>
+    <div class="feature-video">
+      <div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/fUxBs7124Fo" title="Rapid identification of strongly lensed gravitational waves using machine learning" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <div>
+        <p class="card-meta">Featured talk · ICTS · 17 min</p>
+        <h3>Rapid identification of strongly lensed gravitational waves using machine learning</h3>
+        <p>How LensID uses deep learning to screen gravitational-wave pairs about <b>1000x</b> faster than the classical analysis, explained for a general science audience.</p>
+        <p><a href="https://www.youtube.com/playlist?list=PLt234NUr4Ysf1_MrlL7P4hvLIJW7DCKfJ" target="_blank" rel="noopener">All my videos on YouTube</a></p>
+      </div>
+    </div>
+    <div class="videos">
+        <a class="video" href="https://www.youtube.com/watch?v=zv9tStMviwA" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/zv9tStMviwA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="dur">1:23</span></span>
+          <span class="vt">The next frontier: lensing of gravitational waves</span>
+          <span class="vh">Max Planck Institute for Gravitational Physics</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/watch?v=mnhgpSkjI10" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/mnhgpSkjI10/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="dur">29:41</span></span>
+          <span class="vt">Probing dark &amp; baryonic structures with gravitational-wave lensing</span>
+          <span class="vh">ESI Vienna</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/watch?v=Lul1msaE4sE" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/Lul1msaE4sE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="dur">17:47</span></span>
+          <span class="vt">Search for signatures of gravitational-wave lensing</span>
+          <span class="vh">Centre for Strings, Gravitation and Cosmology</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/watch?v=zaVvoxPODEA" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/zaVvoxPODEA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="dur">11:31</span></span>
+          <span class="vt">Gravity Matters: behind the scenes</span>
+          <span class="vh">LIGO-India Education &amp; Public Outreach</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/watch?v=3vBazImZTwU" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/3vBazImZTwU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="dur">6:23</span></span>
+          <span class="vt">Webinar on GR &amp; gravitational-wave physics</span>
+          <span class="vh">Researcher On Web</span>
+        </a>
+        <a class="video" href="https://www.youtube.com/watch?v=dBv0yfX9B80" target="_blank" rel="noopener">
+          <span class="thumb"><img src="https://i.ytimg.com/vi/dBv0yfX9B80/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="dur">5:39</span></span>
+          <span class="vt">Types of stars</span>
+          <span class="vh">IUCAA SciPOP</span>
+        </a>
+    </div>
+  </section>
+
   <!-- ── Outreach ── -->
   <section class="wrap section">
-    <h2>Talks, Outreach &amp; Community</h2>
+    <h2>Outreach &amp; Community</h2>
     <div class="cards three compact">
       <article class="card"><h3>International conferences</h3><p><b>15+</b> presentations and <b>6+</b> invited talks across Australia, the UK, the EU, the USA and India.</p></article>
       <article class="card"><h3>LIGO-India outreach</h3><p>Science communication on gravitational-wave detection for school students and the public.</p></article>
