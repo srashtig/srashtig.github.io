@@ -362,3 +362,4 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
 .cv-head .cv-summary { font-size: 17px; max-width: 820px; }
 @media (prefers-color-scheme: dark) { .cv-title { color: #ff9a5c; } }
 @media (max-width: 720px) { .cv-title { font-size: 26px; } }
+.first-section { padding-top: 40px; }
