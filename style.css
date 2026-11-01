@@ -329,3 +329,29 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
   .cv-skills dd { margin-bottom: 10px; }
   .cv-repos td:first-child { width: 120px; }
 }
+
+/* ── Fixes: portfolio header rule, calmer research page ── */
+.cv-head { border-bottom: 0; padding-bottom: 6px; }
+.research-intro { padding-top: 44px; gap: 40px; }
+.research-intro .eyebrow { font-size: 13px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.research-intro h1 { font-size: 30px; margin: 0 0 14px; }
+.research-intro p { font-size: 16px; color: var(--text); }
+.research-links { margin-top: 6px; }
+.research-links a { color: var(--link); font-weight: 550; }
+.cv .timeline > div { display: grid; grid-template-columns: 150px 1fr; column-gap: 20px; border-left: 0; padding: 0 0 14px 0; }
+.cv .timeline > div::before { display: none; }
+.cv .timeline time { grid-row: 1 / span 2; padding-top: 2px; }
+.cv .timeline h3 { font-size: 16px; margin: 0; }
+.cv .timeline p { font-size: 15px; }
+.cv .cv-section ul.plain { margin: 0; }
+.cv .pubs { padding-left: 26px; margin: 0; }
+.cv .pubs li { padding: 4px 6px; margin-bottom: 8px; }
+.cv .pubs li::marker { color: var(--muted); font-size: 14px; }
+.cv .pubs li a { font-weight: 550; }
+.cv .talks li { margin-bottom: 8px; }
+.cv .talks b { font-weight: 600; }
+@media (max-width: 720px) {
+  .cv .timeline > div { grid-template-columns: 1fr; }
+  .cv .timeline time { grid-row: auto; }
+  .research-intro h1 { font-size: 26px; }
+}
