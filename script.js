@@ -1,6 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll('.fade-in');
-    elements.forEach((el, index) => {
-        el.style.animationDelay = `${index * 0.2}s`;
-    });
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.menu-btn');
+  const links = document.querySelector('.links');
+  if (!btn || !links) return;
+  btn.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    links.classList.remove('open');
+    btn.setAttribute('aria-expanded', false);
+  }));
 });
