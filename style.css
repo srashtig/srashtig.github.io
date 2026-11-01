@@ -355,3 +355,4 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
   .cv .timeline time { grid-row: auto; }
   .research-intro h1 { font-size: 26px; }
 }
+.research-intro p.focus { margin-top: 26px; }
