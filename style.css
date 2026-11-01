@@ -290,3 +290,42 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
 @media (max-width: 720px) {
   .skills > div { grid-template-columns: 1fr; gap: 8px; padding: 14px 16px; }
 }
+
+/* ── Portfolio page: resume-style layout ── */
+.cv { padding-bottom: 24px; }
+.cv-head { padding-top: 44px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.cv-kicker { margin: 0 0 10px; font-size: 13px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.cv-summary { margin: 0; font-size: 19px; line-height: 1.6; max-width: 780px; }
+.cv-jump { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 18px; font-size: 14px; }
+.cv-jump a { color: var(--muted); }
+.cv-jump a:hover { color: var(--accent); text-decoration: none; }
+.cv-section { padding-top: 36px; }
+.cv-section h2 { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin: 0 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.cv-section h2::after { display: none; }
+.cv-skills { display: grid; grid-template-columns: 190px 1fr; gap: 8px 20px; margin: 0; font-size: 15px; }
+.cv-skills dt { font-weight: 600; }
+.cv-skills dd { margin: 0; color: var(--text); }
+.cv-item { padding: 6px 0 18px; }
+.cv-item.compact { padding-bottom: 8px; }
+.cv-item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.cv-item h3 { font-size: 17px; margin: 0; }
+.cv-item h3 span, .cv-project h3 span { font-weight: 400; color: var(--muted); }
+.cv-item time, .cv-project time { font-size: 14px; color: var(--muted); white-space: nowrap; }
+.cv-org { margin: 2px 0 0; color: var(--muted); font-size: 15px; }
+.cv-item ul, .cv-list { margin: 8px 0 0; padding-left: 20px; }
+.cv-item li, .cv-list li { margin-bottom: 5px; }
+.cv-tech { margin: 6px 0 0; font-size: 13.5px; color: var(--muted); }
+.cv-project { padding: 4px 0 16px; }
+.cv-project h3 { font-size: 17px; margin: 0; }
+.cv-project p { margin: 4px 0 0; }
+.cv-repos { width: 100%; border-collapse: collapse; margin-top: 6px; font-size: 15px; }
+.cv-repos td { padding: 8px 0; border-top: 1px solid var(--line); vertical-align: top; }
+.cv-repos td:first-child { width: 190px; font-weight: 600; padding-right: 20px; }
+.cv-repos td:last-child { color: var(--muted); }
+.cv-more { margin: 12px 0 0; font-size: 15px; }
+@media (max-width: 720px) {
+  .cv-summary { font-size: 17px; }
+  .cv-skills { grid-template-columns: 1fr; gap: 2px; }
+  .cv-skills dd { margin-bottom: 10px; }
+  .cv-repos td:first-child { width: 120px; }
+}
