@@ -256,3 +256,16 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
 .pubs .badge { display: inline-block; }
 .skills .chips { border: 0; padding: 0; border-radius: 0; }
 .skills .chips:hover { transform: none; box-shadow: none; }
+
+/* Research intro with sketch */
+.research-intro { display: grid; grid-template-columns: 300px 1fr; gap: 36px; align-items: start; }
+.research-intro .sketch { width: 100%; height: auto; border-radius: 12px; background: #fafafa; border: 1px solid var(--line); }
+.research-intro .eyebrow { margin: 0 0 6px; }
+.research-intro h1 { color: #c2571a; font-size: 34px; line-height: 1.2; margin-bottom: 16px; }
+.research-intro p { margin: 0 0 14px; }
+@media (prefers-color-scheme: dark) { .research-intro h1 { color: #ff9a5c; } }
+@media (max-width: 760px) {
+  .research-intro { grid-template-columns: 1fr; gap: 20px; }
+  .research-intro .sketch { max-width: 300px; }
+  .research-intro h1 { font-size: 28px; }
+}
