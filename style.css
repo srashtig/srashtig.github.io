@@ -269,3 +269,6 @@ h2::after { content: ""; display: block; width: 44px; height: 3px; border-radius
   .research-intro .sketch { max-width: 300px; }
   .research-intro h1 { font-size: 28px; }
 }
+.sketch-col { display: flex; flex-direction: column; gap: 10px; }
+.sketch-link { font-size: 14.5px; font-weight: 550; }
+@media (max-width: 760px) { .sketch-col { max-width: 300px; } }
